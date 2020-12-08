@@ -1,3 +1,4 @@
+## Start with a base image that already has pyspark installed
 FROM fokkodriesprong/docker-pyspark
 
 WORKDIR /app
