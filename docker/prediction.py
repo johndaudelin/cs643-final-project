@@ -14,8 +14,8 @@ from pyspark.sql.session import SparkSession
 sc = SparkContext('local')
 spark = SparkSession(sc)
 
-train_df = spark.read.format('csv').options(header='true', inferSchema='true', sep=';').load('/app/TrainingDataset.csv')
-test_df = spark.read.format('csv').options(header='true', inferSchema='true', sep=';').load('/app/TestDataset.csv')
+train_df = spark.read.format('csv').options(header='true', inferSchema='true', sep=';').load('/data/TrainingDataset.csv')
+test_df = spark.read.format('csv').options(header='true', inferSchema='true', sep=';').load('/data/TestDataset.csv')
 
 print("Data loaded into Spark.")
 print(train_df.toPandas().head())
