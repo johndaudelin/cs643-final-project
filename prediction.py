@@ -1,5 +1,3 @@
-!pip install quinn
-
 import quinn
 import requests
 
